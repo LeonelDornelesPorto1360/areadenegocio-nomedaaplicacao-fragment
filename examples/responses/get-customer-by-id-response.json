@@ -1,0 +1,68 @@
+{
+  "id": "0015f00000FbjJnAAJ",
+  "partyRoleType": "Customer",
+  "party": [
+    {
+      "id": "43063099-5f8c-4390-8352-aeb7d9888763",
+      "salutation": "Ms.",
+      "personName": "Ernie Hilpert",
+      "firstName": "Ernie",
+      "lastName": "Hilpert",
+      "birthDate": "1984-03-17",
+      "partyType": "Individual",
+      "contactPoints": [
+        {
+          "contactPointType": [
+            "ContactPointAddress"
+          ],
+          "id": "440f867d-f639-4447-99d2-44c172c94917",
+          "activeFromDate": "2021-12-12",
+          "addressLine1": "Heidenreich Summit",
+          "cityName": "Kallietown",
+          "postalCodeText": "43213",
+          "stateProvinceName": "TX",
+          "countryName": "USA",
+          "geoLatitude": "84.711",
+          "geoLongitude": "-26.1654",
+          "geoAccuracy": 10
+        },
+        {
+          "contactPointType": [
+            "ContactPointEmail"
+          ],
+          "id": "9be2e69b-aa6e-4d8c-8fb3-04247292e394",
+          "activeFromDate": "2021-12-12",
+          "emailAddress": "Ernie.Hilpert@example.com"
+        },
+        {
+          "contactPointType": [
+            "ContactPointPhone"
+          ],
+          "id": "aace634a-f091-4523-989a-c9ed593ca1e9",
+          "activeFromDate": "2021-12-12",
+          "telephoneNumber": "830-728-9552"
+        }
+      ]
+    }
+  ],
+  "externalIds": [
+    {
+      "id": "a3736f1b-a2eb-4caa-9ad6-7fa49224efdc",
+      "externalId": "00debbe4-6de9-4a17-a1da-2a109be4db52",
+      "externalIdType": [
+        "MDM"
+      ],
+      "statusLastChangedDate": "2021-12-12T19:24:20Z",
+      "status": "VALID"
+    }
+  ],
+  "auditInfo": {
+    "createdDate": "2021-12-12T19:24:05Z",
+    "createdBy": "Application Admin",
+    "updatedDate": "2021-12-12T19:24:20Z",
+    "updatedBy": "Application Admin",
+    "isDeleted": false
+  },
+  "customerNumber": "WLDECDG1",
+  "customerStatus": "Active"
+}

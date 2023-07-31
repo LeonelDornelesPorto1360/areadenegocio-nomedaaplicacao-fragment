@@ -1,0 +1,31 @@
+#%RAML 1.0 Library
+
+uses:
+  global-type-library: ../../libraries/global-type-library.raml
+
+types:
+  customer-by-id:
+    type: object
+    properties:
+      id:
+        type: string
+        example: 0015f00000FbjJnAAJ
+        required: false
+      partyRoleType:
+        type: string
+        example: Customer
+        required: false
+      party:
+        type: global-type-library.party
+      externalIds:
+        type: global-type-library.externalIds
+      auditInfo:
+        type: global-type-library.auditInfo
+      customerNumber:
+        type: string
+        example: WLDECDG1
+        required: false
+      customerStatus:
+        type: string
+        example: Active
+        required: false

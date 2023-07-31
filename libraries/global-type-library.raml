@@ -1,0 +1,142 @@
+#%RAML 1.0 Library
+usage: Defines globally reusable types
+types:
+  externalIds:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          example: a3736f1b-a2eb-4caa-9ad6-7fa49224efdc
+          required: false
+        externalId:
+          type: string
+          example: 00debbe4-6de9-4a17-a1da-2a109be4db52
+          required: false
+        externalIdType:
+          type: array
+          items:
+            type: string
+        statusLastChangedDate:
+          type: string
+          example: '2021-12-12T19:24:20Z'
+          required: false
+        status:
+          type: string
+          example: VALID
+          required: false
+  party:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 43063099-5f8c-4390-8352-aeb7d9888763
+          required: false
+        salutation:
+          type: string
+          example: Ms.
+          required: false
+        personName:
+          type: string
+          example: Ernie Hilpert
+          required: false
+        firstName:
+          type: string
+          example: Ernie
+          required: false
+        lastName:
+          type: string
+          example: Hilpert
+          required: false
+        birthDate:
+          type: date-only
+          example: '1984-03-17'
+          required: false
+        partyType:
+          type: string
+          example: Individual
+          required: false
+        contactPoints:
+          type: array
+          items:
+            type: object
+            properties:
+              contactPointType:
+                type: array
+                items:
+                  type: string
+              id:
+                type: string
+                example: 440f867d-f639-4447-99d2-44c172c94917
+                required: false
+              activeFromDate:
+                type: date-only
+                example: '2021-12-12'
+                required: false
+              addressLine1:
+                type: string
+                example: Heidenreich Summit
+                required: false
+              cityName:
+                type: string
+                example: Kallietown
+                required: false
+              postalCodeText:
+                type: string
+                example: '43213'
+                required: false
+              stateProvinceName:
+                type: string
+                example: TX
+                required: false
+              countryName:
+                type: string
+                example: USA
+                required: false
+              geoLatitude:
+                type: string
+                example: '84.711'
+                required: false
+              geoLongitude:
+                type: string
+                example: '-26.1654'
+                required: false
+              geoAccuracy:
+                type: integer
+                example: 10
+                required: false
+              emailAddress:
+                type: string
+                example: Ernie.Hilpert@example.com
+                required: false
+              telephoneNumber:
+                type: string
+                example: 830-728-9552
+                required: false
+  auditInfo:
+    type: object
+    properties:
+      createdDate:
+        type: string
+        example: '2021-12-12T19:24:05Z'
+        required: false
+      createdBy:
+        type: string
+        example: Application Admin
+        required: false
+      updatedDate:
+        type: string
+        example: '2021-12-12T19:24:20Z'
+        required: false
+      updatedBy:
+        type: string
+        example: Application Admin
+        required: false
+      isDeleted:
+        type: boolean
+        example: false
+        required: false
+  

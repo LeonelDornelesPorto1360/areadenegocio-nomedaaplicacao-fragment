@@ -1,0 +1,22 @@
+#%RAML 1.0 Library
+usage: Common RAML Fragments to standardise implementation of common aspects of RAML API Specifications.
+
+#Ensure no existing traits or datatypes are updated with a breaking change if possible, they could be used by any number of services that could be affected. Ensure to use semantic versioning when publishing this fragment.
+
+uses:
+  get-customers-by-id-datatype: types/responses/get-customers-by-id-datatype.raml
+  post-customer-request-datatype: types/requests/post-customers-datatype.raml
+  post-customer-response-datatype: types/responses/post-customers-datatype.raml
+
+types:
+  get-customers-by-id:
+    type: get-customers-by-id-datatype.customer-by-id
+    example: !include examples/responses/get-customer-by-id-response.json
+  
+  post-customers-request:
+    type: post-customer-request-datatype.post-customer
+    example: !include examples/requests/post-customer-request.json
+
+  post-customers-response:
+    type: post-customer-response-datatype.post-customer
+    example: !include examples/responses/post-customer-response.json
