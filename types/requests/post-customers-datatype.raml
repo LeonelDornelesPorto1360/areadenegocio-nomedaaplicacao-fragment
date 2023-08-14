@@ -1,33 +1,212 @@
 #%RAML 1.0 Library
 
 types:
-  post-customer:
-    type: object
-    properties:
-      convenio:
-        type: string
-        example: '114'
-      dataProtocolo:
-        type: string
-        example: '2023-05-23T00:00:00-03:00'
-      nomeSegurado:
-        type: string
-        example: BETINA E RENAN TELAS LTDA
-      numeroOrigem:
-        type: string
-        example: '20'
-      numeroProposta:
-        type: string
-        example: '1111443'
-      produto:
-        type: string
-        example: Porto Frota
-      qtdeDiasCia:
-        type: string
-        example: '1'
-      status:
-        type: string
-        example: '1'
-      susep:
-        type: string
-        example: S5005J
+  post-opor:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          example: '12345'
+          required: false
+        isDeleted:
+          type: boolean
+          example: false
+          required: false
+        accountId:
+          type: string
+          example: '67890'
+          required: false
+        recordTypeId:
+          type: string
+          example: ABCDE
+          required: false
+        name:
+          type: string
+          example: Exemplo de Oportunidade
+          required: false
+        description:
+          type: string
+          example: Descrição da oportunidade
+          required: false
+        stageName:
+          type: string
+          example: Em Progresso
+          required: false
+        amount:
+          type: integer
+          example: 10000
+          required: false
+        probability:
+          type: integer
+          example: 50
+          required: false
+        closeDate:
+          type: date-only
+          example: '2023-08-31'
+          required: false
+        OpportunityType:
+          type: string
+          example: Novo Negócio
+          required: false
+        nextStep:
+          type: string
+          example: Agendar reunião
+          required: false
+        leadSource:
+          type: string
+          example: Website
+          required: false
+        isClosed:
+          type: boolean
+          example: false
+          required: false
+        isWon:
+          type: boolean
+          example: false
+          required: false
+        forecastCategory:
+          type: string
+          example: Pipeline
+          required: false
+        forecastCategoryName:
+          type: string
+          example: Em Progresso
+          required: false
+        campaignId:
+          type: string
+          example: FGHIJ
+          required: false
+        hasOpportunityLineItem:
+          type: boolean
+          example: true
+          required: false
+        pricebook2Id:
+          type: string
+          example: KLMNO
+          required: false
+        ownerId:
+          type: string
+          example: PQRST
+          required: false
+        createdDate:
+          type: string
+          example: '2023-08-01T09:00:00Z'
+          required: false
+        ageInDays:
+          type: integer
+          example: 13
+          required: false
+        createdById:
+          type: string
+          example: UVWXY
+          required: false
+        lastModifiedDate:
+          type: string
+          example: '2023-08-13T15:30:00Z'
+          required: false
+        lastModifiedById:
+          type: string
+          example: ZABCD
+          required: false
+        systemModstamp:
+          type: string
+          example: '2023-08-13T15:30:00Z'
+          required: false
+        lastActivityDate:
+          type: date-only
+          example: '2023-08-10'
+          required: false
+        lastActivityInDays:
+          type: integer
+          example: 4
+          required: false
+        pushCount:
+          type: integer
+          example: 2
+          required: false
+        lastStageChangeDate:
+          type: string
+          example: '2023-08-05T10:30:00Z'
+          required: false
+        lastStageChangeInDays:
+          type: integer
+          example: 9
+          required: false
+        fiscalQuarter:
+          type: integer
+          example: 3
+          required: false
+        fiscalYear:
+          type: integer
+          example: 2023
+          required: false
+        fiscal:
+          type: string
+          example: Q3
+          required: false
+        contactId:
+          type: string
+          example: EFGHI
+          required: false
+        lastViewedDate:
+          type: string
+          example: '2023-08-13T15:30:00Z'
+          required: false
+        lastReferencedDate:
+          type: string
+          example: '2023-08-13T15:30:00Z'
+          required: false
+        syncedQuoteId:
+          type: string
+          example: JKLMN
+          required: false
+        contractId:
+          type: string
+          example: OPQRS
+          required: false
+        hasOpenActivity:
+          type: boolean
+          example: true
+          required: false
+        hasOverdueTask:
+          type: boolean
+          example: false
+          required: false
+        lastAmountChangedHistoryId:
+          type: string
+          example: TUVWX
+          required: false
+        lastCloseDateChangedHistoryId:
+          type: string
+          example: YZABC
+          required: false
+        isPriorityRecord:
+          type: boolean
+          example: false
+          required: false
+        budgetConfirmed:
+          type: boolean
+          example: true
+          required: false
+        discoveryCompleted:
+          type: boolean
+          example: true
+          required: false
+        roiAnalysisCompleted:
+          type: boolean
+          example: false
+          required: false
+        lossReason:
+          type: string
+          example: Preço muito alto
+          required: false
+        lkOpportunityCreatedDate:
+          type: date-only
+          example: '2023-08-01'
+          required: false
+        gbPurchaseStartDate:
+          type: date-only
+          example: '2023-08-15'
+          required: false
