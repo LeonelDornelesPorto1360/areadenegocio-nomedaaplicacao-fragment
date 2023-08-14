@@ -9,204 +9,271 @@ types:
         id:
           type: string
           example: '12345'
+          description: O ID da oportunidade.
           required: false
         isDeleted:
           type: boolean
           example: false
+          description: Indica se a oportunidade foi excluída.
           required: false
         accountId:
           type: string
           example: '67890'
+          description: O ID da conta associada à oportunidade.
           required: false
         recordTypeId:
           type: string
           example: ABCDE
+          description: O ID do tipo de registro da oportunidade.
           required: false
         name:
           type: string
           example: Exemplo de Oportunidade
+          description: O nome da oportunidade.
           required: false
         description:
           type: string
           example: Descrição da oportunidade
+          description: A descrição da oportunidade.
           required: false
         stageName:
           type: string
           example: Em Progresso
+          description: O estágio atual da oportunidade.
           required: false
+          enum: 
+            - Qualification
+            - Needs Analysis
+            - Proposal
+            - Negotiation
+            - Closed Won
+            - Closed Lost
+            - Presentation
+            - Product Testing
+            - Evaluation
+            - Results Commercial Proposal
+            - Closed No Decision
+            - Probe Presentation
+            - Prospect Pool new
+            - Closed Won Opportunity
+            - Closed Lost Opportunity
         amount:
           type: integer
           example: 10000
+          description: O valor da oportunidade.
           required: false
         probability:
           type: integer
           example: 50
+          description: A probabilidade de fechamento da oportunidade.
           required: false
         closeDate:
           type: date-only
           example: '2023-08-31'
+          description: A data de fechamento da oportunidade.
           required: false
         OpportunityType:
           type: string
           example: Novo Negócio
+          description: O tipo de oportunidade.
           required: false
         nextStep:
           type: string
           example: Agendar reunião
+          description: O próximo passo planejado para a oportunidade.
           required: false
         leadSource:
           type: string
           example: Website
+          description: A fonte de leads da oportunidade.
           required: false
         isClosed:
           type: boolean
           example: false
+          description: Indica se a oportunidade está fechada.
           required: false
         isWon:
           type: boolean
           example: false
+          description: Indica se a oportunidade foi ganha.
           required: false
         forecastCategory:
           type: string
           example: Pipeline
+          description: A categoria de previsão da oportunidade.
           required: false
         forecastCategoryName:
           type: string
           example: Em Progresso
+          description: O nome da categoria de previsão da oportunidade.
           required: false
         campaignId:
           type: string
           example: FGHIJ
+          description: O ID da campanha associada à oportunidade.
           required: false
         hasOpportunityLineItem:
           type: boolean
           example: true
+          description: Indica se a oportunidade tem itens de linha de oportunidade.
           required: false
         pricebook2Id:
           type: string
           example: KLMNO
+          description: O ID do catálogo de preços associado à oportunidade.
           required: false
         ownerId:
           type: string
           example: PQRST
+          description: O ID do proprietário da oportunidade.
           required: false
         createdDate:
           type: string
           example: '2023-08-01T09:00:00Z'
+          description: A data de criação da oportunidade.
           required: false
         ageInDays:
           type: integer
           example: 13
+          description: A idade da oportunidade em dias.
           required: false
         createdById:
           type: string
           example: UVWXY
+          description: O ID do usuário que criou a oportunidade.
           required: false
         lastModifiedDate:
           type: string
           example: '2023-08-13T15:30:00Z'
+          description: A data da última modificação da oportunidade.
           required: false
         lastModifiedById:
           type: string
           example: ZABCD
+          description: O ID do usuário que fez a última modificação na oportunidade.
           required: false
         systemModstamp:
           type: string
           example: '2023-08-13T15:30:00Z'
+          description: O carimbo de data/hora do sistema para a última modificação da oportunidade.
           required: false
         lastActivityDate:
           type: date-only
           example: '2023-08-10'
+          description: A data da última atividade relacionada à oportunidade.
           required: false
         lastActivityInDays:
           type: integer
           example: 4
+          description: A idade da última atividade relacionada à oportunidade em dias.
           required: false
         pushCount:
           type: integer
           example: 2
+          description: O número de vezes que a oportunidade foi empurrada.
           required: false
         lastStageChangeDate:
           type: string
           example: '2023-08-05T10:30:00Z'
+          description: A data da última alteração de estágio da oportunidade.
           required: false
         lastStageChangeInDays:
           type: integer
           example: 9
+          description: A idade da última alteração de estágio da oportunidade em dias.
           required: false
         fiscalQuarter:
           type: integer
           example: 3
+          description: O trimestre fiscal da oportunidade.
           required: false
         fiscalYear:
           type: integer
           example: 2023
+          description: O ano fiscal da oportunidade.
           required: false
         fiscal:
           type: string
           example: Q3
+          description: O período fiscal da oportunidade.
           required: false
         contactId:
           type: string
           example: EFGHI
+          description: O ID do contato associado à oportunidade.
           required: false
         lastViewedDate:
           type: string
           example: '2023-08-13T15:30:00Z'
+          description: A data em que a oportunidade foi visualizada pela última vez.
           required: false
         lastReferencedDate:
           type: string
           example: '2023-08-13T15:30:00Z'
+          description: A data em que a oportunidade foi referenciada pela última vez.
           required: false
         syncedQuoteId:
           type: string
           example: JKLMN
+          description: O ID da cotação sincronizada com a oportunidade.
           required: false
         contractId:
           type: string
           example: OPQRS
+          description: O ID do contrato associado à oportunidade.
           required: false
         hasOpenActivity:
           type: boolean
           example: true
+          description: Indica se a oportunidade tem atividades em aberto.
           required: false
         hasOverdueTask:
           type: boolean
           example: false
+          description: Indica se a oportunidade tem tarefas vencidas.
           required: false
         lastAmountChangedHistoryId:
           type: string
           example: TUVWX
+          description: O ID do histórico da última alteração de valor da oportunidade.
           required: false
         lastCloseDateChangedHistoryId:
           type: string
           example: YZABC
+          description: O ID do histórico da última alteração de data de fechamento da oportunidade.
           required: false
         isPriorityRecord:
           type: boolean
           example: false
+          description: Indica se a oportunidade é um registro prioritário.
           required: false
         budgetConfirmed:
           type: boolean
           example: true
+          description: Indica se o orçamento da oportunidade foi confirmado.
           required: false
         discoveryCompleted:
           type: boolean
           example: true
+          description: Indica se a descoberta da oportunidade foi concluída.
           required: false
         roiAnalysisCompleted:
           type: boolean
           example: false
+          description: Indica se a análise de ROI da oportunidade foi concluída.
           required: false
         lossReason:
           type: string
           example: Preço muito alto
+          description: O motivo da perda da oportunidade.
           required: false
         lkOpportunityCreatedDate:
           type: date-only
           example: '2023-08-01'
+          description: A data de criação da oportunidade no formato local.
           required: false
         gbPurchaseStartDate:
           type: date-only
           example: '2023-08-15'
+          description: A data de início da compra global da oportunidade.
           required: false
